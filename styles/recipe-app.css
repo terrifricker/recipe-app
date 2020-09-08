@@ -115,6 +115,5 @@ fieldset {
 }
 
 #save-button {
-    display: block;
-    justify-items: center;
+border-radius: 5px;
 }
