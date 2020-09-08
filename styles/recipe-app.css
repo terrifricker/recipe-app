@@ -102,7 +102,7 @@ main div {
     margin-bottom: 50px;
 }
 
-
+/* styling for the tags */
 #tag-wrapper {
     display: flex;
     flex-direction: row;
