@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-size: 12pt;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    
+}
+
+/* Styling for the header and navigation menu */
+header {
+    margin: 0;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    display: flex;
+
+}
+
+header h1 {
+    flex: 2;
+    text-align: center;
+}
+
+nav {
+    flex: 2;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display:flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+.disabled {
+    color: gray;
+}
+
+/* Styling for the mid section of page */
+#main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(auto, minmax(80vh,1fr));
+    grid-template-areas:
+        "encouragement . ."
+        ". . ."
+        ". recipe .aside"
+        ". recipe . ";
+    gap: 10px;
+    margin: 30px;
+}
+
+#encouragement {
+    grid-area: "encouragement";
+    grid-column: 1 / span 2;
+    align-self: center;
+    padding-left: 5vw;
+    font-size: 2rem;
+}
+
+main {
+    grid-area: "recipe";
+    grid-column: 2 / 3;
+}
+
+#add-recipe-instructions {
+    grid-area: "aside";
+    grid-column: 3;
+    text-align: center;
+}
+
+/* Styling for the form */
+form {
+    font-size: 1.5rem;
+}
+
+input, textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    margin: 3px;
+    padding: 5px;
+    background-color: whitesmoke;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+}
+
+textarea {
+    min-height: 5em;
+    max-height: 50vh;
+}
+
+main div {
+    margin-bottom: 50px;
+}
+
+
+#tag-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+fieldset {
+    margin: 0;
+    border: none;
+}
+
+#save-button {
+    display: block;
+    justify-items: center;
+}

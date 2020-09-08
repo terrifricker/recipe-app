@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add recipe</title>
+    <meta name="description" content="A form for adding a recipe">
+    <meta name="keywords" content="recipe add">
+    <meta name="author" content="Terri Fricker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/recipe-app.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="disabled">Home</li>
+                <li class="disabled">Recipes</li>
+                <li>Add Recipe</li>
+                <li class="disabled">Search Recipes</li>
+            </ul>
+        </nav>
+        <h1>Add a Recipe</h1>
+    </header>
+
+    <div id="main-wrapper">
+        <h2 id="encouragementPhrase">Hurray, a new recipe!</h2>
+        <main>
+            <form id="add-recipe-form">
+                <div>
+                    <label for="recipe-introduction">Tell me about about your new recipe.</label>
+                    <textarea id="recipe-introduction" name="recipeIntroduction"
+                    placeholder="A short introductory paragraph ..."></textarea>
+                </div>
+                <div>
+                    <label for="recipe-title">What is the name of your new recipe?</label>
+                    <input type="text" id="recipe-title" name="recipeTitle">
+                </div>
+                <div>
+                    <label for="ingredient-list">Begin entering the ingredients.</label>
+                    <input type="text" id="ingredient-list" name="ingredient"
+                    placeholder="first ingredient"> <!-- once entered, a new one will appear -->
+                </div>
+                <!-- <div>
+                    <label for="descriptive-instructions">Type out complete instructions.</label>
+                    <textarea id="descriptive-instructions" name="descriptiveInstructions"></textarea>
+                </div> -->
+                <div>
+                    <label for="recipe-card-instructions">Type out a list of concise instructions for the recipe card (separated by [return/enter]).</label>
+                    <textarea id="recipe-card-instructions" name="recipeCardInstructions"></textarea>
+                </div>
+                <div>
+                    <label for="photo-uploads">If you have a photo you'd like to appear at the top of the recipe post, enter the filename.</label>
+                    <input type="text" id="photo-uploads" name="photo"> <!-- once entered, a new one will appear -->
+                </div>
+                <!-- <div>
+                    <label for="keyword-list">Begin entering words your visitor might use to search for this particular recipe.</label>
+                    <input type="text" id="keyword-list" name="keyword">
+                </div> -->
+
+                <div>
+                    <p>Click any and all tags that will help someone find your recipe.</p>
+
+                    <div id="tag-wrapper">
+                        <fieldset>
+                            <input type="checkbox" id="meal-tag-10" name="tag10" value="breakfast">
+                            <label for="meal-tag-10">Breakfast</label><br>                
+                            <input type="checkbox" id="meal-tag-11" name="tag11" value="lunch">
+                            <label for="meal-tag-11">Lunch</label><br>
+                            <input type="checkbox" id="meal-tag-12" name="tag12" value="dinner">
+                            <label for="meal-tag-12">Dinner</label><br>     
+                            <input type="checkbox" id="meal-tag-13" name="tag13" value="snack">
+                            <label for="meal-tag-13">Snack</label><br>           
+                            <input type="checkbox" id="meal-tag-14" name="tag14" value="dessert">
+                            <label for="meal-tag-14">Dessert</label><br>    
+                        </fieldset>
+                    
+                        <fieldset>
+                            <input type="checkbox" id="kind-tag-20" name="tag20" value="main">
+                            <label for="kind-tag-20">Main</label><br>
+                            <input type="checkbox" id="kind-tag-21" name="tag21" value="side">
+                            <label for="kind-tag-21">Side</label><br>
+                            <input type="checkbox" id="kind-tag-22" name="tag22" value="sweet">
+                            <label for="kind-tag-22">Sweet</label><br>
+                            <input type="checkbox" id="kind-tag-23" name="tag23" value="stew">
+                            <label for="kind-tag-23">Stew</label><br>
+                            <input type="checkbox" id="kind-tag-24" name="tag24" value="hamburger">
+                            <label for="kind-tag-24">Hamburger</label><br>
+                        </fieldset>
+                    
+                        <fieldset>
+                            <input type="checkbox" id="meat-tag-30" name="tag30" value="bear">
+                            <label for="meat-tag-30">Bear</label><br>
+                            <input type="checkbox" id="meat-tag-31" name="tag31" value="antelope">
+                            <label for="meat-tag-31">Antelope</label><br>
+                            <input type="checkbox" id="meat-tag-32" name="tag32" value="deer">
+                            <label for="meat-tag-32">Deer</label><br>
+                            <input type="checkbox" id="meat-tag-33" name="tag33" value="wildTurkey">
+                            <label for="meat-tag-33">Wild Turkey</label><br>
+                            <input type="checkbox" id="meat-tag-34" name="tag34" value="salmon">
+                            <label for="meat-tag-34">Salmon</label><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <input type="checkbox" id="method-tag-40" name="tag40" value="smoke">
+                            <label for="method-tag-40">Smoke</label><br>
+                            <input type="checkbox" id="method-tag-41" name="tag41" value="bbq">
+                            <label for="method-tag-41">BBQ</label><br>
+                            <input type="checkbox" id="method-tag-42" name="tag42" value="skillet">
+                            <label for="method-tag-42">Skillet</label><br>
+                            <input type="checkbox" id="method-tag-43" name="tag43" value="bake">
+                            <label for="method-tag-43">Bake</label><br>
+                        </fieldset>
+                    </div> <!-- end tag wrapper -->
+  
+                <div id="save-button"><input type="submit" value="Save my Recipe"></div>
+            </form> <!-- end new recipe form -->
+
+        </main> <!-- end of main part of page which only includes the new recipe form -->
+    
+        <section id="add-recipe-instructions">
+            <h1>
+
+            </h1>
+            <p>
+
+            </p>
+        </section>
+    </div> <!-- end main wrapper -->
+    <footer>
+
+    </footer>
+<script src="scripts/modify-HTML-after-HTML-load.js"></script>
+<script src="scripts/recipe-app.js"></script>
+</body>
+</html>
