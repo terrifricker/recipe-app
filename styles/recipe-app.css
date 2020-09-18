@@ -6,7 +6,6 @@ body {
     position: relative;
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
-    
 }
 
 /* Styling for the header and navigation menu */
@@ -16,7 +15,6 @@ header {
     background-color: black;
     color: white;
     display: flex;
-
 }
 
 header h1 {
@@ -115,5 +113,5 @@ fieldset {
 }
 
 #save-button {
-border-radius: 5px;
+    border-radius: 5px;
 }
